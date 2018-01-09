@@ -89,10 +89,10 @@ All objects of module, node, expression, port and types are heap allocated.
     }
     
     // Create module instances
-    m = module_create(descr, "m")
+    module_handle_t m = module_create(descr, name)
     
     // Use the module instance
-    dump_to_verilog(m)      
+    dump_to_verilog(m)
     
 ... Work in progress ...
 
